@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citrine Enterprise</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
 
 <nav class="navbar">
     <a class="active" href="#home">Home</a>
-    <a href="#products">Products</a>
+    <a href="#dishes">Products</a>
     <a href="#about">About</a>
     <a href="#list">List</a>
     <a href="#contact">Contact</a>
@@ -28,7 +28,7 @@
     <i class="fas fa-bars" id="menu-bars"></i>
     <i class="fas fa-search" id="search-icon"></i>
     <a href="#" class="fas fa-heart"></a>
-    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="#" class="fas fa-shopping-cart" id="shophere"></a>
 </div>
 </header>
 
@@ -37,47 +37,159 @@
     <label for="search-box" class="fas fa-search"></label>
     <i class="fas fa-times" id="close"></i>
 </form>
-
 <section class="home" id="home">
-    <div class="swiper-container home-slider">
+    <div class="swiper-container home-slider" id="forslide">
         <div class="swiper-wrapper wrapper">
-                        <div class="swiper-slide slide">
-                            <div class="content">
-                                <span>Our Special Product</span>
-                                <h3>Towel Rack</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, obcaecati!</p>
-                                <a href="#" class="btn">Order Now</a>
-                            </div>
-                            <img src="image-1.png" class="images" alt="">
-                        </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Best Products</span>
+                    <h3>Towel Rack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
+                        dolores aliquam  cto sequi officia fugit.</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="image">
+                    <img src="image-1.png" alt="">
+                </div>
+            </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="content">
-                                <span>Our Special Product</span>
-                                <h3>Soup Rack</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, obcaecati!</p>
-                                <a href="#" class="btn">Order Now</a>
-                            </div>
-                            <img src="image-2.png" class="images" alt="">
-                        </div>
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Best Products</span>
+                    <h3>Towel Rack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
+                        dolores aliquam oequi officia fugit.</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="image">
+                    <img src="image-2.png" alt="">
+                </div>
+            </div>
 
-                        <div class="swiper-slide slide">
-                            <div class="content">
-                                <span>Our Special Product</span>
-                                <h3>Multiple use Rack</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, obcaecati!</p>
-                                <a href="#" class="btn">Order Now</a>
-                            </div>
-                            <img src="image-3.png" class="images" alt="">
-                        </div>
-
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>Our Best Products</span>
+                    <h3>Towel Rack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
+                        dolores aliquam expedit officia fugit.</p>
+                    <a href="#" class="btn">Order Now</a>
+                </div>
+                <div class="image">
+                    <img src="image-3.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 </section>
 
+
+<section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Products</h3>
+    <h1 class="heading">Popular Products</h1>
+<div class="box-container">
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-2.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-3.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-2.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-3.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-1.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="image-3.png" class="imageforproduct" alt="">
+        <h3>Best Item</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>Rs. 360</span>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+</div>
+</section>
+
+
+
 </body>
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script src="script2.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="script2.js"></script> -->
 <script src="script.js"></script>
 </html>

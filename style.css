@@ -24,9 +24,10 @@ html{
     scroll-behavior: smooth;
 }
 section{
-    padding: 2rem 9%;
+    margin-top: -6rem;
+    padding: 0rem 9%;
 }
-section:nth-child(){
+section:nth-child(even){
     background: #eee;
 }
 .btn{
@@ -43,11 +44,24 @@ section:nth-child(){
     background: var(--green);
     letter-spacing: .1rem;
 }
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
 .logo1{
     display: none;
 }
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -143,17 +157,18 @@ header .icons #menu-bars{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 9rem;
 }
 .home .home-slider .slide .content{
-    flex: 1 1 45rem;    
+    flex: 1 1 45rem;
 }
 .home .home-slider .slide .image{
-    flex: 1 1 45rem;    
+    flex: 1 1 45rem;
 }
 .home .home-slider .slide .image img{
     width: 100%;
+    border-radius: 50%;
 }
 .home .home-slider .slide .content span{
     color: var(--green);
@@ -172,6 +187,77 @@ header .icons #menu-bars{
 .swiper-pagination-bullet-active{
     background: var(--green);
 }
+.dishes{
+    margin-top: 10rem;
+}
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+.imageforproduct{
+    height: 25rem;
+    width: 25rem;
+}
+.dishes .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{  
+    background: var(--green);
+    color: #fff;
+}
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
+}
+.dishes .box-container .box .fa-eye{
+    left: -15rem;
+}
+.dishes .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+}
+.dishes .box-container .box:hover .fa-eye{
+    left: 1.5rem;
+}
+.dishes .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.dishes .box-container .box .stars{
+    padding: 1rem 0;
+}
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.dishes .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+}
+
+
+
+
+
 
 
 
@@ -192,6 +278,7 @@ header .icons #menu-bars{
         padding: 1rem 2rem;
     }
     section{
+        margin-top: -7rem;
         padding: 2rem;
     }
     .images{
@@ -202,23 +289,22 @@ header .icons #menu-bars{
     }
     .logo1{
         display: inline-block;
-        width: 15rem;
-        height: 7rem;
+        width: 11rem;
+        height: 5rem;
     }
-    header .icons i,
-    header .icons a{
-    cursor: pointer;
-    /* margin-left: 0.2rem; */
-    margin-right: 0.1rem;
-    height: 4rem;
-    line-height: 4rem;
-    width: 4rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--black);
-    border-radius: 50%;
-    background: #eee;
-}
+    header .icons i{
+        margin-left: .2rem;
+        height: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+    }
+    #shophere{
+        margin-left: .2rem;
+        height: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+        margin-right: 1.8rem;
+    }
 }
 
 
@@ -253,23 +339,13 @@ header .icons #menu-bars{
     .home .home-slider .slide .content h3{
         font-size: 5rem;
     }
-    .home .home-slider .slide .image img{
-        object-fit: cover;
-    }
-    .home .home-slider .slide .image{
-        flex: 1 1 5rem;    
-    }
-    .home .home-slider .slide .content{
-       width: 95%;
-    }
-    
+
 }
 
 @media (max-width: 991px) {
     html{
         font-size: 50%;
     }
-
 }
 
 

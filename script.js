@@ -16,22 +16,16 @@ document.querySelector('#close').onclick = () =>{
     document.querySelector('#search-form').classList.remove('active')
 }
 
-
-
-var swiper = new Swiper(".home-slider",{
-    spaceBetween: 250,
-    centeredSlides: true,
+var swiper = new Swiper("#forslide", {
+    spaceBetween: 130,
+    centeredSlieds: true,
     autoplay:{
-        delay:3500,
+        delay: 2500,
         disableOnInteraction: false,
     },
-   
-        pagination:{
-            el: ".swiper-pagination",
-            clickable:true,
-        },
+    pagination:{
+        el:".swiper-pagination",
+        clickable: true,
+    },
     loop:true,
-});
-
-
-
+})
