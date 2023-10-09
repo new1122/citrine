@@ -1,0 +1,296 @@
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body{
+	background-color:#ffffff;
+  }
+  
+  header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: #ff4757;
+  }
+  
+  .nav{
+	max-width: 1200px;
+	margin: auto;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .logo{
+	font-size: 1.1rem;
+	font-weight: 500;
+	position: relative;
+	width: 50%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#ffffff;
+  }
+  
+  .boxs{
+	color:rgb(255, 138, 4);
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	position: absolute;
+	right: 5rem;
+  }
+  
+  .cart-count{
+	position: absolute;
+	background-color: #00ff37;
+	color: rgb(0, 0, 0);
+	top: -.4rem;
+	right: 0;
+	font-size: 1.6rem;
+	padding: 3px;
+	height: 2rem;
+	width: 2rem;
+	line-height:20px ;
+	border-radius: 50%;
+	z-index: 99;
+  }
+  
+  #cart-icon{
+	font-size: 3.5rem;
+	cursor: pointer;
+	padding-top: 10px;
+  }
+  
+  img{
+	width: 100%;
+  }
+  
+  .container{
+	max-width: 1200px;
+	padding: 4rem;
+	margin: auto;
+	width: 100%;
+  }
+  
+  h2.title{
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+	color:#ffffff;
+  }
+  
+  .shop-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+	gap:1.5rem;
+	justify-content: center;
+	align-content: center;
+  }
+  
+  .food-box{
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgb(207, 197, 197);
+	box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	height: 35rem;
+    width: auto;
+    padding: 1.5rem;
+    overflow: hidden;    
+  }
+  .food-img{ 
+	height:80%;
+    width: 100%;
+    border-radius: .5rem;
+  }
+  /* .pic{
+	overflow: hidden;
+  } */
+  
+  .pic:hover img{
+  transform: scale(1.05);
+  }
+  
+  /* .food-img{
+	transition: 0.4s;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+  } */
+  
+  .food-title{
+	font-size: 1rem;
+	font-weight: 600;
+	color:#ff6348;
+  }
+  
+  .food-price{
+	font-weight:500 ;
+  }
+  
+  .add-cart{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #4ed486;
+	color:white;
+	padding: 10px;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  
+  .add-cart:hover{
+	background-color:rgba(255, 0, 0, 0.786);
+  }
+	
+  
+  .cart{
+	position: fixed;
+	top: 0;
+	right: -200%;
+	width: 400px;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+	z-index: 100;
+  }
+  
+  .cart-active{
+	right:0;
+	transition: 0.5s;
+  }
+  
+  .cart-title{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	padding-bottom:20px ;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .cart-box{
+	display: grid;
+	grid-template-columns: 32% 50% 18%;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+  }
+  
+  .cart-img{
+	width: 75px;
+	height: 75px;
+	object-fit: cover;
+	border:2px solid  rgba(0,0,0,0.1);
+	padding: 5px;
+  }
+  .detail-box{
+	display: grid;
+	row-gap: 0.5rem;  
+  }
+  
+  .price-box{
+	display: flex;
+	  justify-content: space-between; 
+  }
+  
+  .cart-food-title{
+	 font-size: 1rem;
+	 text-transform: uppercase;
+	 color:#ff6348;
+	 font-weight: 500;
+  }
+  
+  .cart-price{
+	font-weight: 500;
+  }
+  
+  .cart-quantity{
+	border:1px solid rgba(0,0,0,0.1);
+	outline:none ;
+	width: 2.4rem;
+	text-align: center;
+	font-size: 1rem;
+  }
+  
+  .cart-remove{
+	font-size: 24px;
+	color:red;
+	cursor: pointer;
+  }
+  
+  .total{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+  }
+  
+  .total-title{
+	font-size: 1rem;
+	font-weight: 600;
+  }
+  
+  .total-price{
+	margin-left: 0.5rem;
+  }
+  
+  .btn-buy{
+	padding: 12px 20px;
+	background-color:#2f3542;
+	color:#fff;
+	border: none;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+  }
+  
+  #cart-close{
+	position: absolute;
+	top: 1rem;
+	right: 0.8rem;
+	font-size: 2rem;
+	cursor: pointer;
+  }
+  .food-title{
+	font-size: 2rem;
+	font-weight: 500;
+  }
+  .food-price{
+	font-size: 2rem;
+	color: black;
+	text-decoration: underline;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+  .food-box{
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgb(207, 197, 197);
+	box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	height: 40rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;    
+  }
+  .food-img{ 
+	height:auto;
+    width: 100%;
+    border-radius: .5rem;
+  }
+}

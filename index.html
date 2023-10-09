@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,450 +10,527 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <img src="logo.png" class="logo1" alt="">
-    <a href="#" class="logo"><i class="fas-fa-untensils"></i>Citrine Enterprise</a>
+    <header>
+        <img src="logo.png" class="logo1" alt="">
+        <a href="#" class="logo"><i class="fas-fa-untensils"></i>Citrine Enterprise</a>
 
 
-<nav class="navbar">
-    <a class="active" href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#list">List</a>
-    <a href="#contact">Contact</a>
-    <a href="#order">Order</a>
-</nav>
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#list">List</a>
+            <a href="#contact">Contact</a>
+            <a href="#order">Order</a>
+        </nav>
 
-<div class="icons">
-    <i class="fas fa-bars" id="menu-bars"></i>
-    <i class="fas fa-search" id="search-icon"></i>
-    <a href="#" class="fas fa-heart"></a>
-    <a href="#" class="fas fa-shopping-cart" id="shophere"></a>
-</div>
-</header>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="index2.html" class="fas fa-shopping-cart" id="shophere"></a>
+        </div>
+    </header>
 
-<form action="" id="search-form">
-    <input type="search" placeholder="Search Here..." id="search-box">
-    <label for="search-box" class="fas fa-search"></label>
-    <i class="fas fa-times" id="close"></i>
-</form>
-<section class="home" id="home">
-    <div class="swiper-container home-slider" id="forslide">
-        <div class="swiper-wrapper wrapper">
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Our Best Products</span>
-                    <h3>Towel Rack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
-                        dolores aliquam  cto sequi officia fugit.</p>
-                    <a href="#" class="btn">Order Now</a>
+
+
+
+
+
+
+
+
+
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search Here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="home" id="home">
+        <div class="swiper-container home-slider" id="forslide">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Best Products</span>
+                        <h3>Towel Rack</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            dolores aliquam cto sequi officia fugit.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image-1.png" alt="">
+                    </div>
                 </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Best Products</span>
+                        <h3>Towel Rack</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            dolores aliquam oequi officia fugit.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Best Products</span>
+                        <h3>Towel Rack</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                            dolores aliquam expedit officia fugit.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <h3 class="sub-heading">Our Products</h3>
+        <h1 class="heading">Popular Products</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-2.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-3.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-2.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-3.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-1.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="image-3.png" class="imageforproduct" alt="">
+                <h3>Best Item</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>Rs. 360</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <h3 class="sub-heading">About Us</h3>
+        <h1 class="heading">Why Choose Us and our Products...?</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="logo.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Best Product in the country</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum mollitia nobis deleniti! Nulla
+                    cumque nobis, voluptas ad voluptatem praesentium!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad quidem debitis explicabo sapiente
+                    dolorum.</p>
+                <div class="icon-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Easy Payments</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24 * 7 Service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="list" id="list">
+        <h3 class="sub-heading"> Our Products </h3>
+        <h1 class="heading">List of Our Products</h1>
+
+        <div class="box-container">
+            <div class="box">
                 <div class="image">
                     <img src="image-1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
                 </div>
             </div>
 
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Our Best Products</span>
-                    <h3>Towel Rack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
-                        dolores aliquam oequi officia fugit.</p>
-                    <a href="#" class="btn">Order Now</a>
-                </div>
+            <div class="box">
                 <div class="image">
                     <img src="image-2.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
                 </div>
             </div>
 
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Our Best Products</span>
-                    <h3>Towel Rack</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum 
-                        dolores aliquam expedit officia fugit.</p>
-                    <a href="#" class="btn">Order Now</a>
-                </div>
+            <div class="box">
                 <div class="image">
                     <img src="image-3.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-4.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-2.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-3.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-4.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image-1.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Best Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat
+                        distinctio veniam eos dolorum error!</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                    <span class="price">Rs.360/-</span>
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
+    </section>
 
 
-<section class="products" id="products">
-    <h3 class="sub-heading">Our Products</h3>
-    <h1 class="heading">Popular Products</h1>
-<div class="box-container">
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-2.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-3.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-2.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-3.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-1.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-
-    <div class="box">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-eye"></a>
-        <img src="image-3.png" class="imageforproduct" alt="">
-        <h3>Best Item</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>Rs. 360</span>
-        <a href="#" class="btn">Add to Cart</a>
-    </div>
-</div>
-</section>
-
-
-
-<section class="about" id="about">
-    <h3 class="sub-heading">About Us</h3>
-    <h1 class="heading">Why Choose Us and our Products...?</h1>
-
-    <div class="row">
-        <div class="image">
-            <img src="logo.png" alt="">
-        </div>
-
-        <div class="content">
-            <h3>Best Product in the country</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum mollitia nobis deleniti! Nulla cumque nobis, voluptas ad voluptatem praesentium!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad quidem debitis explicabo sapiente dolorum.</p>
-            <div class="icon-container">
-                <div class="icons">
-                    <i class="fas fa-shipping-fast"></i>
-                    <span>Free Delivery</span>
-                </div>
-
-                <div class="icons">
-                    <i class="fas fa-dollar-sign"></i>
-                    <span>Easy Payments</span>
-                </div>
-
-                <div class="icons">
-                    <i class="fas fa-headset"></i>
-                    <span>24 * 7 Service</span>
-                </div>
+    <section class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">Ahmedabad</a>
+                <a href="#">Surendranagar</a>
+                <a href="#">Bhavnagar</a>
             </div>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </div>
-</section>
 
-
-
-<section class="list" id="list">
-    <h3 class="sub-heading"> Our Products </h3>
-    <h1 class="heading">List of Our Products</h1>
-
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="image-1.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">About</a>
+                <a href="#">List</a>
             </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
+
+            <div class="box">
+                <h3>Contact Information</h3>
+                <a href="#">+91 99999 99999</a>
+                <a href="#">+91 11111 22222</a>
+                <a href="#">citrine.info@gmail.com</a>
+                <a href="#">Surendranagar, Gujarat-000000</a>
+            </div>
+
+
+            <div class="box">
+                <h3>Follo Us on</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Whatsapp</a>
             </div>
         </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="image-2.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-3.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-4.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-1.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-2.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-3.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-4.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="image-1.png" alt="">
-                <a href="#" class="fas fa-heart"></a>
-            </div>
-            <div class="content">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Best Item</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eius cupiditate eligendi quaerat distinctio veniam eos dolorum error!</p>
-                <a href="#" class="btn">Add to Cart</a>
-                <span class="price">Rs.360/-</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="footer" id="contact">
-    <div class="box-container">
-        <div class="box">
-            <h3>Locations</h3>
-            <a href="#">Ahmedabad</a>
-            <a href="#">Surendranagar</a>
-            <a href="#">Bhavnagar</a>
-        </div>
-
-        <div class="box">
-            <h3>Quick Links</h3>
-            <a href="#">Home</a>
-            <a href="#">Product</a>
-            <a href="#">About</a>
-            <a href="#">List</a>
-        </div>
-
-        <div class="box">
-            <h3>Contact Information</h3>
-            <a href="#">+91 99999 99999</a>
-            <a href="#">+91 11111 22222</a>
-            <a href="#">citrine.info@gmail.com</a>
-            <a href="#">Surendranagar, Gujarat-000000</a>
-        </div>
-
-
-        <div class="box">
-            <h3>Follo Us on</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Whatsapp</a>
-        </div>
-    </div>
-
-    <div class="credit">Copyright @2023 by <span>Acharya Web Technologies</span></div>
-</section>
+        <div class="credit">Copyright @2023 by <span>Acharya Web Technologies</span></div>
+    </section>
 
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- <script src="script2.js"></script> -->
 <script src="script.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
 </html>
