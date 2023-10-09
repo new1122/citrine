@@ -31,8 +31,8 @@
 
       <div class="icons">
         <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
+        <!-- <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a> -->
       </div>
       <div class="boxs">
         <div class="cart-count">0</div>
@@ -263,7 +263,7 @@
 
     //Product Item Change Event
     let qtyElements = document.querySelectorAll('.cart-quantity');
-    qtyElements.forEach((input) => {
+    qtyElements.forEach((input) =>  {
       input.addEventListener('change', changeQty);
     });
 

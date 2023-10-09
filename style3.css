@@ -40,32 +40,41 @@
   
   .boxs{
 	color:rgb(255, 138, 4);
-	width: 3rem;
-	height: 3rem;
-	text-align: center;
-	position: absolute;
-	right: 5rem;
+	/* width: 3rem;
+	height: 3rem; */
+	/* text-align: center; */
+	position: relative;
+	/* right: 5rem; */
   }
   
   .cart-count{
 	position: absolute;
 	background-color: #00ff37;
 	color: rgb(0, 0, 0);
-	top: -.4rem;
+	top: -1rem;
 	right: 0;
+	text-align: center;
 	font-size: 1.6rem;
-	padding: 3px;
+	padding: .5rem;
 	height: 2rem;
 	width: 2rem;
 	line-height:20px ;
 	border-radius: 50%;
 	z-index: 99;
+	
   }
   
   #cart-icon{
-	font-size: 3.5rem;
+	font-size: 1px;
 	cursor: pointer;
-	padding-top: 10px;
+    height: 2.5rem;
+    line-height: 4.5rem;
+    width: 2.5rem;
+	padding: 1rem;
+    text-align: center;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
   }
   
   img{
@@ -154,7 +163,7 @@
   .cart{
 	position: fixed;
 	top: 0;
-	right: -200%;
+	right: -160%;
 	width: 400px;
 	height: 100vh;
 	overflow-y: auto;
@@ -167,7 +176,7 @@
   
   .cart-active{
 	right:0;
-	transition: 0.5s;
+	transition: 0.3s;
   }
   
   .cart-title{
@@ -272,6 +281,37 @@
 	color: black;
 	text-decoration: underline;
   }
+  .cart{
+	width: 30%;
+	/* opacity: .92; */
+	background-color:#8afa8a;
+  }
+  .cart-food-title{
+	font-size: 2rem;
+	color: black;
+	font-weight: 500;
+  }
+  .total{
+	font-size: 2.1rem;
+  }
+  .cart-title{
+	font-size: 2rem;
+  }
+  .total-title{
+	font-size: 1.5rem;
+  }
+  .cart-content{
+	font-size: 1.5rem;
+  }
+  .btn-buy{
+	font-size: 1.5rem;
+  }
+  .cart-quantity{
+	font-size: 2rem;
+	width: 5rem;
+  }
+
+
 
 
 
@@ -283,7 +323,7 @@
 	border: 1px solid rgb(207, 197, 197);
 	box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.1);
 	border-radius: 3px;
-	height: 40rem;
+	height: max-content;
     width: 100%;
     padding: 1.5rem;
     overflow: hidden;    
@@ -292,5 +332,32 @@
 	height:auto;
     width: 100%;
     border-radius: .5rem;
+  }
+  
+  .cart{
+	width: 90%;
+	opacity: .92;
+  }
+  .total{
+	font-size: 2.1rem;
+  }
+  .cart-title{
+	font-size: 2rem;
+  }
+  .total-title{
+	font-size: 2rem;
+  }
+  .cart-food-title{
+	font-size: 1.9rem;
+  }
+  .cart-content{
+	font-size: 1.5rem;
+  }
+  .btn-buy{
+	font-size: 1.5rem;
+  }
+  .cart-quantity{
+	font-size: 2rem;
+	width: 4.5rem;
   }
 }
