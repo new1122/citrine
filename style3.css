@@ -317,16 +317,16 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.4);
 	display: none;
 }
 .popup-content {
 	background-color: white;
-	margin: 15% auto;
+	margin: 5% auto;
 	padding: 20px;
 	border: 1px solid #888888;
-	width: 50%;
+	width: 40%;
 	/* text-align: center; */
 	font-weight: bolder;
 }
@@ -339,11 +339,16 @@
 	font-size: 2rem;
 }
 .popup form{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
-	width: max-content;
+	width: fit-content;
 	font-size: 2rem;
 }
 .popup form input{
+	position: relative;
 	border: #aaafb9 1px solid;
 	text-align: center;
 }
@@ -359,6 +364,12 @@ h1 {
 
 
   @media (max-width: 768px) {
+	.popup-content {
+		margin: 15% auto;
+	}
+	.popup-content {
+		width: 80%;
+	}
   .food-box{
 	position: relative;
 	background-color: #fff;
