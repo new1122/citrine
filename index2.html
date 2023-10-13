@@ -242,21 +242,27 @@
           Close
         </button>
         <!-- <form action="#" onsubmit="emailsend(); reset(); return false;"> -->
-          <form action="#"></form>
-          Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" placeholder="Your Name" name="name" id="name">
+          <form action="#" onsubmit="reset(); return false;"></form>
+          <label for="name">Name</label><br>
+          <input type="text" placeholder="Your Name..." name="name" id="name" style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;" required>
           <br>
-          Contact: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" placeholder="Contact Number" name="contact" id="contact">
+          <label for="contact">Contact</label><br>
+          <input type="number" placeholder="Contact Number..." name="contact" id="contact" style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;" required>
           <br>
-          Address: <input type="text" name="adress" id="adress">
+          <label for="adress">Adress</label><br>
+          <input type="text" placeholder="Your Adress..." name="adress" id="adress" style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;" required>
           <br>
-          Pincode: <input type="number" name="pincode" id="pincode" maxlength="6" required>
+          <label for="pincode">Pincode</label><br>
+         <input type="number" placeholder="Your Pincode..." name="pincode" id="pincode" maxlength="6" required style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;" required>
           <br>
-          Email ID: <input type="email" name="email" id="to">
+          <label for="email">Email ID</label><br>
+          <input type="email" name="email" placeholder="Your Email ID..." id="to" style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;" required><br>
+          <p style="font-size: 1.2rem;">*Please note that you should write your correct Email Id for further correspondence.</p>
           <br>Total <div class="totalrupeestopay" style="text-align: center;" id="price"></div>
           <br>
-          <p id="details2"></p>
+          <p id="details2" style="display: none;"></p>
 
-          <input type="submit" name="submit" id="submit" onclick="sendmail()">
+          <input type="submit" name="submit" id="submit" onclick="sendmail()" style="width: 100%; background-color: rgb(104, 163, 27); color: white; height: 4.5rem; border-radius: .7rem;">
 
         </form>
       </div>
