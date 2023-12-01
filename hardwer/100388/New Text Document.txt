@@ -1,0 +1,11 @@
+antic pvd gold 160 mm
+
+22*3*3.5
+
+w 140 g
+
+mrp 1499/-
+
+sell 358
+
+

@@ -1,0 +1,8 @@
+
+shop dish ss
+
+
+mrp  582
+listing price 380
+dimension  12*9*10 cm
+weight 150g

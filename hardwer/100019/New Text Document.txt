@@ -1,0 +1,9 @@
+antic knokner 
+
+6*5*1
+
+w 50g
+
+mrp 512
+
+sell 149
