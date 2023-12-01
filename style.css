@@ -935,7 +935,10 @@ header .icons #menu-bars{
     cursor: pointer;
   }
 
+  .swal2-popup {
+    font-size: 1.6rem !important;
 
+  }
 
 
 
@@ -985,7 +988,7 @@ header .icons #menu-bars{
     }
     .logo1{
         display: inline-block;
-        width: 16rem;
+        width: 14.5rem;
         height: 6.2rem;
     }
     

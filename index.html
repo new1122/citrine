@@ -66,12 +66,6 @@
 
 
 
-
-
-
-
-
-
     <!-- <div id="myModal" class="modal"> -->
 
     <!-- Modal content -->
@@ -83,13 +77,6 @@
     </div>
 
  -->
-
-
-
-
-
-
-
 
 
 
@@ -410,8 +397,11 @@
             <button id="closePopup">
                 Close
             </button>
-            <!-- <form action="#" onsubmit="emailsend(); reset(); return false;"> -->
-            <form action="#" onsubmit="reset(); return false;"></form>
+           
+            <p id="details2" style="display: none;"></p>
+            </form>
+            <!-- <form action="#" name="detailform" onsubmit="emailsend()"> -->
+            <form action="#" name="detailform">
             <label for="name">Name</label><br>
             <input type="text" placeholder="Your Name..." name="name" id="name"
                 style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;"
@@ -435,17 +425,17 @@
             <label for="email">Email ID</label><br>
             <input type="email" name="email" placeholder="Your Email ID..." id="to"
                 style="width: 100%; border: 1px solid rgb(165, 158, 158); border-radius: .3rem; height: 3.5rem;"
-                required><br>
-            <p style="font-size: 1.2rem;">*Please note that you should write your correct Email Id for further
-                correspondence.</p>
+                required><br> 
+         <p style="font-size: 1.2rem;">*Please note that you should write your correct Email Id for further
+                correspondence.</p> 
             <br>Total <div class="totalrupeestopay" style="text-align: center;" id="price"></div>
             <br>
             <p id="details2" style="display: none;"></p>
 
-            <input type="submit" name="submit" id="submit" onclick="sendmail()"
+            <input type="submit" name="submit"  id="submit" onclick="sendmail(), submitForm()"
                 style="width: 100%; background-color: rgb(104, 163, 27); color: white; height: 4.5rem; border-radius: .7rem;">
 
-            </form>
+             </form>
         </div>
     </div>
 
@@ -947,12 +937,19 @@
     }
     function myFunction1() {
       Swal.fire({
-           position: 'top',
+           position: 'center',
            icon: 'success',
-           title: 'item added to the cart',
+           title: 'Item added to the cart',
            showConfirmButton: false,
-           timer: 1200
+           timer: 1200,
+           width: 500,
 })
+    }
+
+</script>
+<script>
+    function myfuntion3(){
+document.getElementById("detailform").reset();
     }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
