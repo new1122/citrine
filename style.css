@@ -966,8 +966,9 @@ header .icons #menu-bars{
         font-size: 55%;
     }
     header{
+        margin-top: 0.8rem;
         padding: 1rem 2rem;
-        height: 8.2rem;
+        height: 7.7rem;
     }
     section{
         margin-top: -7rem;
@@ -984,8 +985,8 @@ header .icons #menu-bars{
     }
     .logo1{
         display: inline-block;
-        width: 11rem;
-        height: 5rem;
+        width: 16rem;
+        height: 6.2rem;
     }
     
     header .icons i{
@@ -1015,11 +1016,23 @@ header .icons #menu-bars{
     }
     #imagechange{
         border-radius:1%;
+        height: 60vh;
     }
     .popup-content {
         width: 88%;
     }
-    
+    #cart-icon{
+        font-size: 3px;
+        cursor: pointer;
+        height: 3rem;
+        line-height: 4.5rem;
+        width: 2.5rem;
+        padding: 1rem;
+        text-align: center;
+        color: var(--black);
+        border-radius: 50%;
+        background: #eee;
+      }
     .cart-food-title{
         font-size: 1.5rem;
         text-transform:capitalize;
