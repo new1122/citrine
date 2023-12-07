@@ -250,9 +250,9 @@ header .icons #menu-bars{
     width: 25rem;
     border-radius: .5rem;
   }
-  .pic:hover img{
-    /* transform: scale(-0.100); */
-    }
+  /* .pic:hover img{
+    transform: scale(-0.100);
+    } */
     
     /* .food-img{
       transition: 0.4s;
@@ -309,7 +309,8 @@ header .icons #menu-bars{
     .cart-title{
       text-align: center;
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: 1000;
+      text-decoration: underline;
       margin-bottom: 1rem;
       padding-bottom:20px ;
       border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -411,18 +412,21 @@ header .icons #menu-bars{
     .cart{
       width: 30%;
       /* opacity: .92; */
-      background-color:#c8ecc8;
+      background-color: rgb(35, 35, 100);
+      color: white;
     }
     .cart-food-title{
       font-size: 2rem;
-      color: black;
-      font-weight: 500;
+      color: white;
+      font-weight: 800;
     }
     .total{
       font-size: 2.1rem;
     }
     .cart-title{
       font-size: 2rem;
+      font-weight: 1500;
+      text-decoration: underline;
     }
     .total-title{
       font-size: 1.5rem;
@@ -485,8 +489,18 @@ header .icons #menu-bars{
         color: green;
     }
     
+    .cart #myButton{
+        background-color: white;
+        color: #192a56;
+        font-weight: 1300;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 2.2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-
+    .cart #myButton:hover{box-shadow: rgba(250, 249, 249, 0.56) 0px 12px 100px 4px;
+    }
 
 
 
@@ -698,9 +712,14 @@ header .icons #menu-bars{
     margin-top: 5rem;
 }
 .list .box-container{
-    display:grid;
+    display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+	gap:1.5rem;
+	justify-content: center;
+	align-content: center;
+    /* display:grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 1.5rem; */
 }
 .list .box-container .food-box{
     background: #fff;
@@ -1041,6 +1060,7 @@ header .icons #menu-bars{
 
   }
 
+  
 
 
 
@@ -1132,7 +1152,9 @@ header .icons #menu-bars{
         font-size: 4rem;
         font-weight:bolder;
     }
-
+    .heading{
+        font-size: 2.3rem;
+    }
 
 
 
@@ -1215,7 +1237,7 @@ header .icons #menu-bars{
         overflow-y: auto;
         overflow-x: hidden;
         padding: 20px;
-        background-color: rgb(211, 241, 165);
+        background-color: var(--black);
         box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
         z-index: 100;
       }
