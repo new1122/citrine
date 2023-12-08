@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citrine Enterprise</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" class="logo1" alt="">
+        <a href="index.html" class="logo"><i class="fas-fa-untensils"></i>Citrine Enterprise</a>
+
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#products">Bathroom Accessories</a>
+            <a href="#about">About</a>
+            <a href="#products">Other Hardware Accessories</a>
+            <a href="#footers">Contact</a>
+            <a href="#products">Order</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-edit" title="View Your Order Status or to cancel" id="mybtn"></i>
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <!-- <a href="index2.html" class="fas fa-shopping-cart" id="shophere"></a> -->
+        </div>
+
+
+
+        <div class="boxs">
+            <div class="cart-count">0</div>
+            <ion-icon name="cart" id="cart-icon"></ion-icon>
+        </div>
+
+        <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content" id="details">
+            </div>
+
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+<br><br>
+            <button class="btn-buy" id="myButton" onclick="myFunction()">Place Order</button>
+
+            <ion-icon name="close" id="cart-close"></ion-icon>
+
+        </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search Here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+
+
+
+<section id="boxed" class="boxed">
+    <div class="head">View or Cancel your Order</div>
+    <hr>
+    <form action="#" method="post" id="forms">
+       <table> 
+        <tr>
+            <td> Name: </td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td> Mobile Number: </td>
+            <td><input type="number" name="contact" id="contact"></td>
+        </tr>
+        <tr>
+            <td> Order ID: </td>
+            <td><input type="number" name="orderid" id="orderid"></td>
+        </tr>
+         <br>
+       
+    </table>
+    </form>
+</section>
+
+
+<style>
+    table{
+        border: 1px solid black;
+    }
+    #forms{
+        text-align: initial;
+    }
+   #boxed{
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-top: 5rem;
+    width: 80%;
+    position: relative;
+    margin-right: 10%;
+    height: max-content;
+    text-align: center;
+   }
+   .head{
+    color: rgb(13, 13, 82);
+    font-size: 2.8rem;
+   }
+   hr{
+    color: black;
+    background-color: black;
+    border: 1px solid black;
+   }
+</style>
+
+
+
+
+
+
+    </body></html>
