@@ -14,7 +14,84 @@
     <link rel="stylesheet" href="style3.css"> -->
 
 </head>
+<style>
+    #hidden{
+        display: none;
+        position: fixed; /* Stay in place */
+  z-index: 5555555; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    #hidden #abc{
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+  #hidden .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 4rem;
+  margin-right: 12.5%;
+  font-weight: bold;
+}
 
+#hidden .close:hover,
+#hidden .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+<script>
+    function openmain(){
+       var abc = document.getElementById("hidden");
+        abc.style.display = "block";
+   
+
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+            hidden.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                hidden.style.display = "none";
+            }
+            }
+    }
+
+//    var boxopen = document.getElementById("hidden");
+//    var buttonopen = document.getElementById('myBtn1234');
+//    buttonopen.onclick = function(){
+//     boxopen.style.display = "block";
+//    }
+
+// var modal = document.getElementById("myModal1234");
+// var btn = document.getElementById("myBtn1234");
+// var span = document.getElementsByClassName("close1234");
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+</script>
 <body>
     <header>
         <img src="logo.png" class="logo1" alt="">
@@ -173,9 +250,36 @@
                 <h2 class="food-title">Folding Towel Rack</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.2500/-</p>
                 <span class="food-price">Rs.1000</span>
-                 <i class="fas fa-eye" id="see-more"></i>
+                 <i class="fas fa-eye" id="see-more"  onclick="openmain(); close001()" id="myBtn123"></i>
+                 <!-- <button style="border: 1px solid black; cursor: pointer;">Open Modal</button> -->
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
+
+
+
+            
+
+           <div id="hidden">
+            <span class="close">&times;</span>
+                <div id="abc">
+                    <h3 class="a331 sub-heading">PRODUCT NAME: FOLDING TOWEL RACK</p> <br>
+                        <h4 class="a331 detailsofproduct">Product Details:  <br> <br>
+                            PRODUCT NAME: FOLDING TOWEL RACK <br>
+                          Size:  18 inch / 450 mm <br>
+                          Size: 63*14*25 cm 
+                        
+                        </h4>
+                    <img class="a331" src="bathroom assasory/331 ok/331 a.jpeg" alt="">
+                    <img class="a331" src="bathroom assasory/331 ok/331.jpeg" alt="">
+                    <img class="a331" src="bathroom assasory/331 ok/WhatsApp Image 2023-05-29 at 1.10.05 PM (1).jpeg" alt="">
+                    <img class="a331" src="bathroom assasory/331 ok/WhatsApp Image 2023-05-29 at 1.10.06 PM.jpeg" alt="">
+
+                </div>
+           </div>
+
+
+
+
 
             <div class="food-box">
                 <div class="pic">
@@ -192,7 +296,7 @@
                 <h2 class="food-title">Shop Dish SS</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.582/-</p>
                 <span class="food-price">Rs.380</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -211,7 +315,7 @@
                 <h2 class="food-title">Rob Hook</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.488/-</p>
                 <span class="food-price">Rs.250</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -230,7 +334,7 @@
                 <h2 class="food-title">Shop Dish</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.850/-</p>
                 <span class="food-price">Rs.328</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
             <div class="food-box">
@@ -248,7 +352,7 @@
                 <h2 class="food-title">Soap Dish with Brush holder</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.850/-</p>
                 <span class="food-price">Rs.350</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -271,7 +375,7 @@
                 <h2 class="food-title">Bathroom Shelf</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.2850/-</p>
                 <span class="food-price">Rs.1098</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -291,7 +395,7 @@
                 <h2 class="food-title">Bathroom shelf 15.5 inch</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.850/-</p>
                 <span class="food-price">Rs.350</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -310,7 +414,7 @@
                 <h2 class="food-title">Bathroom Shelf/toothbruss</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.1850/-</p>
                 <span class="food-price">Rs.750</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -329,7 +433,7 @@
                 <h2 class="food-title">24 inch towel bar</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.990/-</p>
                 <span class="food-price">Rs.350</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -348,7 +452,7 @@
                 <h2 class="food-title">Folding Towel Rod</h2>
                 <p style="text-decoration: line-through; font-size: 1.4rem;">Rs.1525/-</p>
                 <span class="food-price">Rs.499</span>
-                <i class="fas fa-eye" id="see-more"></i>
+                <i class="fas fa-eye" id="see-more"  onclick="openmain()" id="myBtn123"></i>
                 <ion-icon name="cart" class="add-cart" class="btn" onclick="myFunction1()"></ion-icon>
             </div>
 
@@ -1027,31 +1131,32 @@
 <!-- <script src="script2.js"></script> -->
 <script src="script.js"></script>
 <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+  
+// Get the modal
+var modal123 = document.getElementById("myModal123");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+// Get the button that opens the modal
+var btn123 = document.getElementById("myBtn123");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close123")[0];
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
+// When the user clicks the button, open the modal 
+btn123.onclick = function() {
+  modal123.style.display = "block";
+}
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal123.style.display = "none";
+}
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal123.style.display = "none";
+  }
+}
 </script>
 <script>
 
