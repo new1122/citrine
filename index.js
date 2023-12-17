@@ -18,7 +18,8 @@ app.post('/', function(req,res){
        
     var sql = "INSERT INTO loginuser(user_name,user_mob) VALUES(?,?)";
     connection.query(sql,[name, contact] , function(error, result){
-        alert("Order Placed and Will deliver shortly !!!")
+        if (error) console.log("error")
+        else alert("Order Placed successfully !!!")
     })
 })
 
