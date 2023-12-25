@@ -1,6 +1,6 @@
-const mysql = require("mysql");
+var mysql = require("mysql");
 
-const connection = mysql.createConnection({
+var connection = mysql.createConnection({
     host: "82.180.142.51",
     user: "u360049388_CitrineDB",
     password: "Citrine123@",
@@ -14,9 +14,5 @@ const connection = mysql.createConnection({
 //         database: "loginuser"
 //     });
 
-connection.connect(function(error){
-    if (error) console.log("error")
-    else console.log("connnected")
-})
 
 module.exports = connection;

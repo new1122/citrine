@@ -505,7 +505,8 @@
                 <br>Total <div class="totalrupeestopay" style="text-align: center;" id="price"></div>
                 <br>
                 <p id="details2" style="display: none;"></p>
-                <input type="submit" name="btn" id="btn" style="width: 100%; background-color: rgb(104, 163, 27); color: white; height: 4.5rem; border-radius: .7rem;">
+                <input type="text" name="dataoforder" id="dataoforder" readonly style="display: none;">
+                <input type="submit" onclick="sendmail()" name="btn" id="btn" style="width: 100%; background-color: rgb(104, 163, 27); color: white; height: 4.5rem; border-radius: .7rem;">
                 <!-- <input type="submit" name="submit" id="submit" onclick="sendmail()" style="width: 100%; background-color: rgb(104, 163, 27); color: white; height: 4.5rem; border-radius: .7rem;"> -->
       <!-- onclick = "sendmail()"    is pending with submit button -->
       <!-- onclick = "sendmail()"    is pending with submit button -->
@@ -516,15 +517,6 @@
       <!-- onclick = "sendmail()"    is pending with submit button -->
 
             </form>
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 
@@ -1313,9 +1305,11 @@
 <script>
 
     function myFunction() {
-        const details = document.getElementById("details");
-        const details2 = document.getElementById("details2");
+        var details = document.getElementById("details");
+        var details2 = document.getElementById("details2");
         details2.innerHTML = details.textContent;
+        
+        document.getElementById("dataoforder").value = document.getElementById("details2").textContent;
     }
 
     function sendmail() {
@@ -1328,7 +1322,7 @@
             contact: document.querySelector("#contact").value,
             adress: document.querySelector("#adress").value,
             to: document.querySelector("#to").value,
-            order: document.getElementById("details2").textContent,
+            order: document.getElementById("dataoforder").textContent,
             price: document.getElementById("price").textContent,
         }
 
@@ -2903,51 +2897,6 @@ header .icons #menu-bars{
 
 
 </style>
-<script>
-const express = require("express");
-const bodyParser = require("body-parser");
-var app = express();
-
-    const mysql = require("mysql");
-    
-    
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
-
-
-
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "cirtine",
-    password: "Citrine123@",
-    database: "citrine"
-});
-
-connection.connect(function(error){
-    if (error) throw error;
-    else console.log("connnected")
-})
-
-
-app.get('/', function(req,res){
-    res.sendFile(__dirname+'/index.html');
-})
-
-app.post('/', function(req,res){
-    var name = req.body.name;
-    var contact = req.body.contact;
-    var email = req.body.email;
-    var adress = req.body.adress;
-    var pincode = req.body.pincode;
-
-   
-        var sql = "INSERT INTO loginuser(user_name,user_mob,user_email,user_adress,user_pincode) VALUES(?,?,?,?,?)";
-        connection.query(sql,[name, contact,email, adress, pincode] , function(error, result){
-            alert('order placed succesfully!!!')
-            res.redirect('/index.html')  
-        })
-})
-</script>
 </html>
 
 
